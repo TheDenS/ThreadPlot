@@ -27,10 +27,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->pushButton->setIcon(this->style()->standardIcon(QStyle::SP_MediaPlay));
     ui->pushButton_2->setIcon(this->style()->standardIcon(QStyle::SP_MediaPause));
     ui->pushButton_3->setIcon(this->style()->standardIcon(QStyle::SP_MediaStop));
-
-
-
-
 }
 
 MainWindow::~MainWindow()
@@ -116,8 +112,6 @@ void MainWindow::on_pushButton_3_clicked()
 
     rnd_1->setRunning(false);
     rnd_1=nullptr;
-
-    thread_1->terminate();
 
     ui->widget->graph()->data()->clear();
     ui->widget->replot();

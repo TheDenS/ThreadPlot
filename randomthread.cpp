@@ -35,7 +35,6 @@ void RandomThread::run()
         if(!m_paused)
         {
             vector_1.clear();
-            vector_1.resize(100);
             for(i=0;i<100;i++)
             {
                 m_XY.setX(i);
@@ -45,7 +44,6 @@ void RandomThread::run()
             emit arrayXY(&vector_1);
             QTimer::singleShot(500, &loop, SLOT(quit()));
             loop.exec();
-
         }
         else
         {
