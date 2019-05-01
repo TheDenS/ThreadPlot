@@ -40,7 +40,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QCustomPlot *wGraphic;
     int State;
     QThread *thread_1;
     RandomThread *rnd_1;
